@@ -1,0 +1,200 @@
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+        html { height: 100% }
+        body { height: 100%; margin: 0px; padding: 0px }
+        #map_canvas { height: 100% }
+    </style>
+    <script type="text/javascript"
+            src="http://maps.google.com/maps/api/js?sensor=false">
+    </script>
+    <script type="text/javascript">
+function one(){
+
+sendSms.inputNum("1");
+
+document.getElementById("blank").innerHTML=sendSms.getNum();
+
+}
+
+function two(){
+
+sendSms.inputNum("2");
+document.getElementById("blank").innerHTML=sendSms.getNum();
+
+
+}
+function three(){
+
+sendSms.inputNum("3");
+document.getElementById("blank").innerHTML=sendSms.getNum();
+
+
+}
+function four(){
+
+sendSms.inputNum("4");
+document.getElementById("blank").innerHTML=sendSms.getNum();
+
+
+}
+function five(){
+
+sendSms.inputNum("5");
+
+
+}
+function six(){
+
+sendSms.inputNum("6");
+document.getElementById("blank").innerHTML=sendSms.getNum();
+
+
+}
+function seven(){
+
+sendSms.inputNum("7");
+document.getElementById("blank").innerHTML=sendSms.getNum();
+
+
+}
+function eight(){
+
+sendSms.inputNum("8");
+document.getElementById("blank").innerHTML=sendSms.getNum();
+
+
+}
+function nine(){
+
+sendSms.inputNum("9");
+document.getElementById("blank").innerHTML=sendSms.getNum();
+
+
+}
+function star(){
+
+sendSms.inputNum("*");
+document.getElementById("blank").innerHTML=sendSms.getNum();
+
+
+}
+
+function zero(){
+
+sendSms.inputNum("0");
+document.getElementById("blank").innerHTML=sendSms.getNum();
+
+}
+
+function sharp(){
+
+sendSms.inputNum("#");
+document.getElementById("blank").innerHTML=sendSms.getNum();
+
+
+}
+
+function submit(){
+
+sendSms.msgScreen(document.getElementById("msg").value);
+
+}
+
+
+
+
+
+
+
+
+</script>
+</head>
+<body onload="initialize()">
+
+<table align="center" style="margin=15pt;">
+    <tr >
+    <td>
+       <input type = button onclick="one()" style="WIDTH: 75pt; HEIGHT: 50pt" value = "1"/>
+    </td>
+        <td>
+            <input type = button onclick="two()" style="WIDTH: 75pt; HEIGHT: 50pt" value = "2"/>
+
+        </td>
+        <td>
+            <input type = button onclick="three()" style="WIDTH: 75pt; HEIGHT: 50pt" value = "3"/>
+
+        </td>
+    </tr>
+
+    <tr align="center">
+        <td>
+            <input type = button onclick="four()" style="WIDTH: 75pt; HEIGHT: 50pt" value = "4"/>
+        </td>
+        <td>
+            <input type = button onclick="five()" style="WIDTH: 75pt; HEIGHT: 50pt" value = "5"/>
+
+        </td>
+        <td>
+            <input type = button onclick="six" style="WIDTH: 75pt; HEIGHT: 50pt" value = "6"/>
+
+        </td>
+    </tr>
+
+    <tr align="center">
+        <td>
+            <input type = button onclick="seven()" style="WIDTH: 75pt; HEIGHT: 50pt" value = "7"/>
+        </td>
+        <td>
+            <input type = button onclick="eight()" style="WIDTH: 75pt; HEIGHT: 50pt" value = "8"/>
+
+        </td>
+        <td>
+            <input type = button onclick="nine()" style="WIDTH: 75pt; HEIGHT: 50pt" value = "9"/>
+
+        </td>
+    </tr>
+
+    <tr align ="center">
+        <td>
+            <input type = button onclick="star()" style="WIDTH: 75pt; HEIGHT: 50pt" value = "*"/>
+        </td>
+        <td>
+            <input type = button onclick="zero()" style="WIDTH: 75pt; HEIGHT: 50pt" value = "0"/>
+
+        </td>
+        <td>
+            <input type = button onclick="sharp()" style="WIDTH: 75pt; HEIGHT: 50pt" value = "#"/>
+
+        </td>
+    </tr>
+
+
+</table>
+<p></p>
+
+
+<table border="1" align="center">
+    <tr>
+        <td>
+        MOBILE NUMBER
+        </td>
+        <td width="170pt">
+            <span id="blank"></span>
+        </td>
+    </tr>
+</table>
+<p></p>
+
+<a style="margin:20pt;">Message : </a>
+<p align="center">
+<input type = "text" id = "msg" style = "WIDTH: 235pt; HEIGHT:50pt" />
+</p>
+<p></p>
+<p align="right">
+<input type = "button" onclick = "submit()" style="WIDTH: 60pt; HEIGHT:30pt; margin: 20pt;"  value = "submit"/>
+
+</p>
+</body>
+</html>
